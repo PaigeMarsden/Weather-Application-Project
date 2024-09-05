@@ -68,16 +68,16 @@ footer {
 .current-temperature-icon {
   position: relative;
   top: 10px;
-  font-size: 42px;
+  width: 88px;
+  height: 88px;
 }
 .current-temperature-value {
   position: relative;
-  top: 10px;
   font-weight: bold;
   font-size: 72px;
 }
 .current-temperature-unit {
   position: relative;
-  top: -20px;
+  top: -30px;
   font-size: 32px;
 }
