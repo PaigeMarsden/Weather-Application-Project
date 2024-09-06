@@ -95,8 +95,8 @@ footer,
   margin-bottom: 10px;
 }
 .forecast-temperature-icon {
-  text-align: center;
-  font-size: 40px;
+  width: 88px;
+  height: 88px;
 }
 .forecast-temperature-values {
   text-align: center;
