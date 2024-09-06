@@ -54,7 +54,31 @@ function searchFormSubmit(event) {
   searchCity(searchInput.value);
 }
 
+function displayForcast() {
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="forecast-temperature-day">
+            <div class="forecast-temperature-date">${day}</div>
+            <div class="forecast-temperature-icon">⛅</div>
+            <div class="forecast-temperature-values">
+              <div class="forecast-temperature-value">
+                <strong>18°C</strong>
+              </div>
+              <div class="forecast-temperature-value">14°C</div>
+            </div>
+          </div>`;
+  });
+
+  let forecastElement = document.querySelector("#forecast-temperature");
+  forecastElement.innerHTML = forecastHtml;
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", searchFormSubmit);
 
 searchCity("Melbourne");
+displayForcast();
